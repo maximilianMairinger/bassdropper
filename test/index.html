@@ -3,7 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Bassdropper - test</title>
+  <title>Bassdropper</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <style>
     body {
@@ -11,6 +11,8 @@
       height: 100vh;
       margin: 0;
       background: rgb(43, 43, 43);
+      color: white;
+      font-family: sans-serif;
     }
     #main {
       position: fixed;
@@ -29,12 +31,15 @@
   </style>
 </head>
 <body>
-  <div id="main">
-    <div id="test"></div>
-    
+  <audio controls autoplay>
+      <source src="song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
-  </div>
-  <div id="scroll"></div>
+
+    <input type="number" placeholder="from (in sec) (40)">
+    <input type="number" placeholder="duration (in sec) (20)">
+    Press any key to play (while not focusing the inputboxes)
   
   <script src='./dist/test-bundle.js'></script>
 </body>
